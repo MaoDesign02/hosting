@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios a la oficina de reparto</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://i.pinimg.com/564x/cf/09/75/cf09754bb782d5cf2a390508170f9bb4.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Ligera opacidad para el fondo del contenedor */
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 26px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Animación suave para el contenedor */
+        .container {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Estilo para la imagen */
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para la tabla */
+        table {
+            margin-top: 20px;
+        }
+
+        .highlight {
+            background-color: #f4a300; /* Color naranja para la fila resaltada */
+            color: #fff;
+        }
+
+        .data-row {
+            color: #000; /* Color negro para los datos de la fila */
+        }
+
+        /* Estilo para el hipervínculo */
+        .link {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para el iframe */
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP3389602A-s-o.webp" alt="Nevera Inteligente">
+        <h1>Servicios a la oficina de reparto</h1>
+        <p>Órdenes recibidas para el despacho</p>
+        
+        <!-- Tabla de solicitudes con clases de Bootstrap -->
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr class="highlight">
+                    <th>Número</th>
+                    <th>Fecha</th>
+                    <th>Nevera</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Pesos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="data-row">
+                    <td>1</td>
+                    <td>2024-08-28 07:10:00</td>
+                    <td>neveraMauricio</td>
+                    <td>huevos</td>
+                    <td>10</td>
+                    <td>30000</td>
+                </tr>
+                <!-- Puedes agregar más filas aquí si lo deseas -->
+            </tbody>
+        </table>
+        
+        <!-- Iframe para mostrar la Google Sheet -->
+        <iframe src="https://docs.google.com/spreadsheets/d/1vHzJDem7ss2R6dTrvMFflgS8-Aiom7ahYwv9TkTBfqI/pubhtml?widget=true&amp;headers=false"></iframe>
+    </div>
+</body>
+</html>
+
